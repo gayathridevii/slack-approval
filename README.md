@@ -2,7 +2,7 @@
 
 Custom action to send approval request to Slack
 
-![](https://user-images.githubusercontent.com/35091584/195488201-acc24277-5e0c-431f-a4b3-21b4430d5d80.png)
+![](https://github.com/gayathridevii/slack-approval/assets/145091116/c4d36403-24e4-432d-b937-03680a28a0d4)
 
 - Post a message in Slack with a "Approve" and "Reject" buttons.
 - Clicking on "Approve" will execute next steps.
@@ -29,6 +29,7 @@ jobs:
           mention-to-user: ${{ secrets.SLACK_MENTION_TO_USER }}
           mention-to-group: ${{ secrets.SLACK_MENTION_TO_GROUP }}
           authorized-users: ${{ secrets.SLACK_AUTHORIZED_USERS }}
+          release-version: ${{ env.RELEASE_VERSION }}
         timeout-minutes: 10
 ```
 
@@ -49,6 +50,8 @@ jobs:
     - Optional. Slack user IDs who are authorized to approve or reject. Comma separated.
     - e.g.,
       - `authorized-users: xxxxxx,yyyyyy`
+  - `release-version`
+    - Release version of deployment
 
 - Set `timeout-minutes`
   - Set the time to wait for approval.
