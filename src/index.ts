@@ -52,7 +52,7 @@ async function run(inputs: SlackApprovalInputs, app: App): Promise<void> {
 							},
 							{
 								type: "mrkdwn",
-								text: `:rocket:*Release Version:*\n${inputs.releaseVersion}`,
+								text: `:rocket: *Release Version:*\n${inputs.releaseVersion}`,
 							},
 						],
 					},

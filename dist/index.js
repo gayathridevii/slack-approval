@@ -77015,7 +77015,7 @@ function run(inputs, app) {
                                 },
                                 {
                                     type: "mrkdwn",
-                                    text: `:rocket:*Release Version:*\n${inputs.releaseVersion}`,
+                                    text: `:rocket: *Release Version:*\n${inputs.releaseVersion}`,
                                 },
                             ],
                         },
