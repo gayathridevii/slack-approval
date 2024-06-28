@@ -76809,6 +76809,8 @@ exports.Inputs = {
     MentionToUser: "mention-to-user",
     MentionToGroup: "mention-to-group",
     AuthorizedUsers: "authorized-users",
+    ReleaseVersion: "release-version",
+
 };
 
 
@@ -76885,6 +76887,7 @@ function getInputs() {
     const mentionToUser = getOptionalInput(constants_1.Inputs.MentionToUser);
     const mentionToGroup = getOptionalInput(constants_1.Inputs.MentionToGroup);
     const authorizedUsers = getOptionalListInput(constants_1.Inputs.AuthorizedUsers);
+    const releaseVersion = getRequiredInput(Inputs.ReleaseVersion);
     return {
         botToken,
         signingSecret,
@@ -76893,6 +76896,7 @@ function getInputs() {
         mentionToUser,
         mentionToGroup,
         authorizedUsers,
+        releaseVersion,
     };
 }
 exports.getInputs = getInputs;
@@ -77011,7 +77015,7 @@ function run(inputs, app) {
                                 },
                                 {
                                     type: "mrkdwn",
-                                    text: `*RunnerOS:*\n${githubInfo.runnerOS}`,
+                                    text: `*Release Version:*\n${inputs.releaseVersion}`,
                                 },
                             ],
                         },
