@@ -76995,7 +76995,7 @@ function run(inputs, app) {
                             fields: [
                                 {
                                     type: "mrkdwn",
-                                    text: `*GitHub Actor:*\n${githubInfo.actor}`,
+                                    text: `:bust_in_silhouette: *GitHub Actor:*\n${githubInfo.actor}`,
                                 },
                                 {
                                     type: "mrkdwn",

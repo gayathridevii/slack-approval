@@ -36,7 +36,7 @@ async function run(inputs: SlackApprovalInputs, app: App): Promise<void> {
 						fields: [
 							{
 								type: "mrkdwn",
-								text: `*GitHub Actor:*\n${githubInfo.actor}`,
+								text: `:bust_in_silhouette: *GitHub Actor:*\n${githubInfo.actor}`,
 							},
 							{
 								type: "mrkdwn",
