@@ -48,10 +48,6 @@ async function run(inputs: SlackApprovalInputs, app: App): Promise<void> {
 							},
 							{
 								type: "mrkdwn",
-								text: `*GITHUB_RUN_ID:*\n${githubInfo.runId}`,
-							},
-							{
-								type: "mrkdwn",
 								text: `*Workflow:*\n${githubInfo.workflow}`,
 							},
 							{

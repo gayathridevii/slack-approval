@@ -77007,10 +77007,6 @@ function run(inputs, app) {
                                 },
                                 {
                                     type: "mrkdwn",
-                                    text: `*GITHUB_RUN_ID:*\n${githubInfo.runId}`,
-                                },
-                                {
-                                    type: "mrkdwn",
                                     text: `*Workflow:*\n${githubInfo.workflow}`,
                                 },
                                 {
