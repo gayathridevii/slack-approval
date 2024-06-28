@@ -76887,7 +76887,7 @@ function getInputs() {
     const mentionToUser = getOptionalInput(constants_1.Inputs.MentionToUser);
     const mentionToGroup = getOptionalInput(constants_1.Inputs.MentionToGroup);
     const authorizedUsers = getOptionalListInput(constants_1.Inputs.AuthorizedUsers);
-    const releaseVersion = getRequiredInput(Inputs.ReleaseVersion);
+    const releaseVersion = getRequiredInput(constants_1.Inputs.ReleaseVersion);
     return {
         botToken,
         signingSecret,
