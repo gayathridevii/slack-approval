@@ -31,7 +31,7 @@ export function getInputs(): SlackApprovalInputs {
 		mentionToUser,
 		mentionToGroup,
 		authorizedUsers,
-		releaseVersion,
+		releaseVersion
 	};
 }
 
